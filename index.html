@@ -2,25 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My School</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #f7f7f7;
+
+            /* FULL BACKGROUND IMAGE */
+            background-image: url("images/full-bg.jpg"); /* ← CHANGE THIS */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
 
         header {
-            background: #004aad;
+            background: rgba(0, 74, 173, 0.8); /* slightly transparent to show background behind */
             color: white;
             padding: 30px;
             text-align: center;
+            position: relative;
+        }
+
+        /* LOGO placed where your circle was */
+        .school-logo {
+            position: absolute;
+            left: 40px;
+            top: 25px;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
         }
 
         nav {
-            background: #022c63;
+            background: rgba(2, 44, 99, 0.9);
             padding: 10px;
             text-align: center;
         }
@@ -37,7 +56,7 @@
             margin: 20px;
             background: white;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
         }
 
         h2 {
@@ -45,7 +64,7 @@
         }
 
         footer {
-            background: #004aad;
+            background: rgba(0, 74, 173, 0.9);
             color: white;
             text-align: center;
             padding: 15px;
@@ -56,6 +75,9 @@
 <body>
 
 <header>
+    <!-- LOGO IMAGE -->
+    <img class="school-logo" src="images/logo.png" alt="School Logo">
+
     <h1>🏫 My School Name</h1>
     <p>Welcome to our official school webpage!</p>
 </header>
@@ -70,12 +92,7 @@
 
 <section id="history">
     <h2>📜 History</h2>
-    <p>
-        Write your school’s history here. Example:  
-        Our school was founded in 1985 with the mission to provide quality education 
-        and foster the growth of young leaders. Over the years, it has developed a 
-        strong tradition of academic excellence and community involvement.
-    </p>
+    <p>Write your school’s history here...</p>
 </section>
 
 <section id="teachers">
@@ -99,7 +116,7 @@
 </section>
 
 <section id="others">
-    <h2>🏆 Other Titles (School Orgs, Activities, Fairs)</h2>
+    <h2>🏆 Other Titles</h2>
     <ul>
         <li>Science Club</li>
         <li>Sports Activities</li>
@@ -109,18 +126,8 @@
 </section>
 
 <section id="alma">
-<section id="alma">
     <h2>🎶 Alma Mater Song</h2>
-  <audio src="audio/alma-matersong.mp3" controls></audio>
-
-    <p>
-        Insert your lyrics here.
-
-
-        
-    </p>
-</section>
-    </p>
+    <audio src="audio/alma-matersong.mp3" controls></audio>
 </section>
 
 <footer>
